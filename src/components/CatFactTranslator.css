@@ -1,0 +1,89 @@
+/* src/CatFactTranslator.css o src/components/CatFactTranslator.css */
+
+.cat-fact-translator-container {
+    background-color: #ffffff; /* Fondo blanco para el contenedor principal */
+    border: 1px solid #e0e0e0;
+    border-radius: 12px; /* Bordes más redondeados */
+    padding: 25px;
+    margin: 20px auto; /* Centra el contenedor y añade margen */
+    max-width: 600px; /* Ancho máximo para mejor lectura */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidad */
+    text-align: center; /* Centra el texto del título */
+}
+
+.cat-fact-translator-container h2 {
+    color: #4a4a4a; /* Un color oscuro pero suave para el título */
+    margin-bottom: 20px;
+    font-size: 1.8em; /* Tamaño de fuente más grande para el título */
+}
+
+.cat-fact-content {
+    margin-bottom: 20px;
+    text-align: left; /* Alinea el texto del dato a la izquierda */
+    font-size: 1.1em; /* Tamaño de fuente ligeramente más grande para el texto */
+    line-height: 1.6; /* Espaciado entre líneas para legibilidad */
+}
+
+.fact-section {
+    background-color: #f9f9f9; /* Fondo ligeramente gris para las secciones de texto */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #f0f0f0;
+}
+
+.fact-section.original {
+    /* Estilos específicos para el hecho original si quieres diferenciarlos */
+    border-left: 5px solid #8e44ad; /* Una barra de color para el original */
+}
+
+.fact-section.translated {
+    /* Estilos específicos para el hecho traducido */
+    border-left: 5px solid #3498db; /* Otra barra de color para el traducido */
+}
+
+.fact-section p {
+    margin: 0; /* Elimina el margen por defecto de los párrafos dentro de las secciones */
+    color: #333333;
+}
+
+.fact-section h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #666666;
+    font-size: 1.2em; /* Tamaño de fuente para los subtítulos "Original" y "Traducido" */
+}
+
+.translate-button {
+    background-color: #6c5ce7; /* Un púrpura vibrante para el botón */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px; /* Bordes muy redondeados para el botón */
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+    outline: none; /* Elimina el contorno al hacer click */
+}
+
+.translate-button:hover {
+    background-color: #5a4acb; /* Color más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+.translate-button:active {
+    background-color: #4b3ba0; /* Color aún más oscuro al hacer click */
+    transform: translateY(0);
+}
+
+.error-message {
+    color: #e74c3c; /* Rojo brillante para mensajes de error */
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.loading-message {
+    color: #2c3e50; /* Gris oscuro para mensajes de carga */
+    margin-top: 15px;
+    font-style: italic;
+}
